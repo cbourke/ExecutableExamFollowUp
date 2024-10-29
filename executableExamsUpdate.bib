@@ -18,7 +18,86 @@
   series = {SIGCSE 2023}
 }
 
-%%% 3 papers cited our original SIGCSE23 paper:
+%%% Related Papers
+
+@inproceedings{
+  author = {Eric Poitras and Brent Crane and Angela Siegel},
+  title = {Generative AI in Introductory Programming Instruction: Examining the Assistance Dilemma with LLM-Based Code Generators},
+  inproceeding =
+  abstract = {Problem decomposition is an important skill in programming, allowing learners to break down complex tasks into manageable subgoals. However, translating these subgoals into executable code poses a significant challenge for novice programmers. In this study conducted in an introductory programming course, learners received instruction in stepwise refinement and integration of AI-generated code within their assignments. Throughout the course, learners were permitted to rely on AI code generators, following opportunities to receive feedback on their ability to read and write code without AI assistance. Our findings show that learners frequently relied on AI-generated code when working on assignments outside the classroom, but that the frequency of reliance varied from one assignment to another. The reliance on AI-generated code was not correlated with the learners’ year in their degree, nor whether they were enrolled in a CS degree or not. Instead, it was associated with their prior knowledge, as learners who were less proficient in reading and writing code were more likely to seek AI assistance. AI tools were primarily used to translate subgoals into code, fix errors, and explain algorithmic concepts. Few learners encountered difficulties in understanding or integrating AI generated code into their solutions. Overall, learner performance in meeting assignment requirements was relatively high, regardless of their prior knowledge or reliance on AI code generators. We conclude that leveraging the capabilities of generative AI can effectively bridge the gap between problem-solving and implementation, enabling learners to engage in skills that might otherwise be beyond their reach.},
+  notes = {SIGCSE24 Virtual, allow ChatGPT on assignments throughout course; novices were more reliant on AI generated code}
+}
+
+@inproceedings{filteredAI03,
+  author = {Iris Ma and Alberto Krone-Martins and Crista Lopes},
+  title = {Integrating AI Tutors in a Programming Course},
+  abstract = {RAGMan is an LLM-powered tutoring system that can support a variety of course-specific and homework-specific AI tutors. RAGMan leverages Retrieval Augmented Generation (RAG), as well as strict instructions, to ensure the alignment of the AI tutors’ responses. By using RAGMan’s AI tutors, students receive assistance with their specific homework assignments without directly obtaining solutions, while also having the ability to ask general programming-related questions. RAGMan was deployed as an optional resource in an introductory programming course with an enrollment of 455 students. It was configured as a set of five homework-specific AI tutors. This paper describes the interactions the students had with the AI tutors, the students’ feedback, and a comparative grade analysis. Overall, about half of the students engaged with the AI tutors, and the vast majority of the interactions were legitimate homework questions. When students posed questions within the intended scope, the AI tutors delivered accurate responses 98% of the time. Within the students used AI tutors, 78% reported that the tutors helped their learning. Beyond AI tutors’ ability to provide valuable suggestions, students reported appreciating them for fostering a safe learning environment free from judgment.},
+  notes = {SIGCSE24 Virtual, made a filtered AI tutor},
+}
+
+@inproceedings{10.1145/3631802.3631830,
+  author = {Liffiton, Mark and Sheese, Brad E and Savelka, Jaromir and Denny, Paul},
+  title = {CodeHelp: Using Large Language Models with Guardrails for Scalable Support in Programming Classes},
+  year = {2024},
+  isbn = {9798400716539},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3631802.3631830},
+  doi = {10.1145/3631802.3631830},
+  abstract = {Computing educators face significant challenges in providing timely support to students, especially in large class settings. Large language models (LLMs) have emerged recently and show great promise for providing on-demand help at a large scale, but there are concerns that students may over-rely on the outputs produced by these models. In this paper, we introduce CodeHelp, a novel LLM-powered tool designed with guardrails to provide on-demand assistance to programming students without directly revealing solutions. We detail the design of the tool, which incorporates a number of useful features for instructors, and elaborate on the pipeline of prompting strategies we use to ensure generated outputs are suitable for students. To evaluate CodeHelp, we deployed it in a first-year computer and data science course with 52 students and collected student interactions over a 12-week period. We examine students’ usage patterns and perceptions of the tool, and we report reflections from the course instructor and a series of recommendations for classroom use. Our findings suggest that CodeHelp is well-received by students who especially value its availability and help with resolving errors, and that for instructors it is easy to deploy and complements, rather than replaces, the support that they provide to students.},
+  booktitle = {Proceedings of the 23rd Koli Calling International Conference on Computing Education Research},
+  articleno = {8},
+  numpages = {11},
+  keywords = {Guardrails, Intelligent programming tutors, Intelligent tutoring systems, Large language models, Natural language interfaces, Novice programmers, Programming assistance},
+  location = {Koli, Finland},
+  series = {Koli Calling '23},
+  notes = {CodeHelp.app}
+}
+
+@inproceedings{10.1145/3636243.3636249,
+  author = {Sheese, Brad and Liffiton, Mark and Savelka, Jaromir and Denny, Paul},
+  title = {Patterns of Student Help-Seeking When Using a Large Language Model-Powered Programming Assistant},
+  year = {2024},
+  isbn = {9798400716195},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3636243.3636249},
+  doi = {10.1145/3636243.3636249},
+  abstract = {Providing personalized assistance at scale is a long-standing challenge for computing educators, but a new generation of tools powered by large language models (LLMs) offers immense promise. Such tools can, in theory, provide on-demand help in large class settings and be configured with appropriate guardrails to prevent misuse and mitigate common concerns around learner over-reliance. However, the deployment of LLM-powered tools in authentic classroom settings is still rare, and very little is currently known about how students will use them in practice and what type of help they will seek. To address this, we examine students’ use of an innovative LLM-powered tool that provides on-demand programming assistance without revealing solutions directly. We deployed the tool for 12 weeks in an introductory computer and data science course&nbsp;(n = 52), collecting more than 2,500 queries submitted by students throughout the term. We manually categorized all student queries based on the type of assistance sought, and we automatically analyzed several additional query characteristics. We found that most queries requested immediate help with programming assignments, whereas fewer requests asked for help on related concepts or for deepening conceptual understanding. Furthermore, students often provided minimal information to the tool, suggesting this is an area in which targeted instruction would be beneficial. We also found that students who achieved more success in the course tended to have used the tool more frequently overall. Lessons from this research can be leveraged by programming educators and institutions who plan to augment their teaching with emerging LLM-powered tools.},
+  booktitle = {Proceedings of the 26th Australasian Computing Education Conference},
+  pages = {49–57},
+  numpages = {9},
+  keywords = {Guardrails, Intelligent programming tutors, Intelligent tutoring systems, Large language models, Natural language interfaces, Novice programmers, Programming assistance},
+  location = {Sydney, NSW, Australia},
+  series = {ACE '24},
+  notes = {CodeHelp.app}
+}
+
+@article{Liu2024TeachingCW,
+  title={Teaching CS50 with AI: Leveraging Generative Artificial Intelligence in Computer Science Education},
+  author={Rong Liu and Carter Zenke and Charlie Liu and Andrew Holmes and Patrick Thornton and David J. Malan},
+  journal={Proceedings of the 55th ACM Technical Symposium on Computer Science Education V. 1},
+  year={2024},
+  url={https://api.semanticscholar.org/CorpusID:266651447},
+  pdf = {papers/V1fp0567-liu.pdf},
+  notes = {CS50 Rubber Duck Debugger (filtered GPT)},
+}
+
+% Other SIGCSE24 Virtual papers:
+% Integrating Natural Language Prompting Tasks in Introductory Programming Courses
+%   -added 2 prompt engineering exercises
+% SIGCSE 2025 papers:
+% https://sigcse2025.sigcse.org/track/sigcse-ts-2025-Papers#event-overview
+% A critical approach to ChatGPT: an experience in SQL learning
+%  -they had students try to break ChatGPT (have it give bad answers)
+% A Multi-Institutional Assessment of Oral Exams in Software Courses
+%  -oral exams as alternative
+%  -Another oral exam-type paper: Code Interviews: Design and Evaluation of a More Authentic Assessment for Introductory Programming Assignments
+% Analysis of Generative AI Policies in Computing Course Syllabi
+% Measuring Test Anxiety of Two Computerized Exam Approaches
+
+%%% 3 papers cited our original SIGCSE23 paper
+%%% We wouldn't necessarily cite these, but we should check them out
 
 @InProceedings{10.1007/978-981-99-8031-4_17,
   author="Rivera-Alvarado, Ernesto and Guadamuz, Sa{\'u}l",
