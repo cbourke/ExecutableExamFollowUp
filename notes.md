@@ -22,3 +22,8 @@ Revisit the taxonomy
 SIGCSE Virtual:
  -2024: https://sigcsevirtual.acm.org/program/program-sigcse-virtual-2024/
  -2025: TBD, $100 registration, late May deadline for abstracts
+
+MISC
+
+\cite{10.1145/3689535.3689554} indicates that LLM debugging messages are not all that great
+\cite{10.1145/3636515} is a 2024 literature review of automated grading
